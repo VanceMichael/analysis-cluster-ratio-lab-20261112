@@ -1,0 +1,12 @@
+{
+  "arms": [
+    "A",
+    "B"
+  ],
+  "unit": "exhibitor",
+  "strata": [
+    "stratum"
+  ],
+  "seed": 2047,
+  "alpha": 0.05
+}

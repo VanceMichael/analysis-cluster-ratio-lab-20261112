@@ -1,0 +1,15 @@
+{
+  "name": "cluster-ratio-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.22.1"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node --check src/cli.js && node --check src/domain.js && node --check src/dataset.js && node --check src/output.js",
+    "start": "node src/cli.js summary",
+    "demo": "node scripts/demo.js"
+  }
+}
