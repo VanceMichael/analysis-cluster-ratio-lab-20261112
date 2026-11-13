@@ -1,0 +1,307 @@
+{
+  "adoption": {
+    "note": "实际采用（adopted）仅作旁列诊断，主估计按登记计划分配组做意向分析",
+    "perArm": {
+      "A": {
+        "adopted": 8,
+        "clusters": 12,
+        "share": 0.6666666666666666
+      },
+      "B": {
+        "adopted": 8,
+        "clusters": 12,
+        "share": 0.6666666666666666
+      }
+    }
+  },
+  "clusters": {
+    "excluded": 0,
+    "included": 24,
+    "perArm": {
+      "A": 12,
+      "B": 12
+    },
+    "perStratum": {
+      "food": {
+        "A": 6,
+        "B": 6
+      },
+      "tech": {
+        "A": 6,
+        "B": 6
+      }
+    }
+  },
+  "conclusion": {
+    "zh": [
+      "实验单位：展商（同一展商多天记录成组）；按登记计划分配组做意向分析，实际采用仅作旁列诊断。",
+      "主要指标：每条有效线索成交额 = 各组成交额总和 ÷ 各组有效线索总和（总和之比，不是展商比率的平均）。",
+      "纳入展商 24 家（A 组 12 家，B 组 12 家）；排除 0 家（去向见 exclusions）。",
+      "未调整：A 组 20.99 元/条，B 组 20.51 元/条，差值 -0.48 元，95% 置信区间 [-2.23, 1.26]，p=0.5876。",
+      "方差缩减（CUPED，仅用实验前 pre_value、pre_leads）：A 组 21.01 元/条，B 组 20.50 元/条，差值 -0.51 元，95% 置信区间 [-2.25, 1.23]，p=0.5678。",
+      "判断：在 α=0.05 水平下，现有数据不足以认定 B 组每条有效线索成交额相对 A 组有所提升（置信区间包含 0）。",
+      "旁列诊断：A 组 8/12 家实际采用，B 组 8/12 家实际采用；实际采用不进入主估计。",
+      "以上仅为本次展会数据的统计估计，受样本规模与展会情境限制，不构成对下一场展会推广收益的承诺。"
+    ]
+  },
+  "denominatorRisk": {
+    "perArm": {
+      "A": {
+        "belowThreshold": false,
+        "clusters": 12,
+        "leads": 480,
+        "meanLeadsPerCluster": 40,
+        "positive": true,
+        "zeroLeadExhibitors": []
+      },
+      "B": {
+        "belowThreshold": false,
+        "clusters": 12,
+        "leads": 468,
+        "meanLeadsPerCluster": 39,
+        "positive": true,
+        "zeroLeadExhibitors": []
+      }
+    },
+    "thresholdMeanLeadsPerCluster": 1
+  },
+  "diagnostics": [],
+  "exclusions": [],
+  "inputFingerprint": "5eeb2e8c4a7a32a9ccaf99a77573f52783d8bcc19e32dc96a35a0f7d65512c5c",
+  "kind": "experiment_analysis",
+  "plan": {
+    "adjustment": {
+      "centering": "pooled_mean",
+      "coefficientRule": "pooled_ols_slope",
+      "coefficients": {
+        "denominator": -0.6327272727272727,
+        "numerator": -0.5997860962566844
+      },
+      "covariateMeans": {
+        "pre_leads": 9.916666666666666,
+        "pre_value": 168.58333333333334
+      },
+      "covariates": {
+        "denominator": "pre_leads",
+        "numerator": "pre_value"
+      },
+      "method": "cuped",
+      "postExperimentVariablesUsed": false,
+      "zeroCovariateVariance": {
+        "pre_leads": false,
+        "pre_value": false
+      }
+    },
+    "alpha": 0.05,
+    "arms": [
+      "A",
+      "B"
+    ],
+    "control": "A",
+    "includedExhibitors": [
+      {
+        "arm": "A",
+        "exhibitor": "e0",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e1",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e10",
+        "stratum": "food"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e11",
+        "stratum": "tech"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e12",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e13",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e14",
+        "stratum": "food"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e15",
+        "stratum": "tech"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e16",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e17",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e18",
+        "stratum": "food"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e19",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e2",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e20",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e21",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e22",
+        "stratum": "food"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e23",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e3",
+        "stratum": "tech"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e4",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e5",
+        "stratum": "tech"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e6",
+        "stratum": "food"
+      },
+      {
+        "arm": "B",
+        "exhibitor": "e7",
+        "stratum": "tech"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e8",
+        "stratum": "food"
+      },
+      {
+        "arm": "A",
+        "exhibitor": "e9",
+        "stratum": "tech"
+      }
+    ],
+    "metric": {
+      "denominator": "leads",
+      "estimand": "treatment_minus_control",
+      "label": "每条有效线索成交额",
+      "name": "value_per_valid_lead",
+      "numerator": "value",
+      "type": "ratio_of_sums"
+    },
+    "planFingerprint": "110ebca7a436f336a604d8ae4b77c802805293e4f4cab61d34fe435fa3e425e3",
+    "primaryView": "adjusted",
+    "seed": 2047,
+    "seedFingerprint": "5724996419cdd73ff29911aedf9e4c4131a07c31860c485a789eeca71758fd20",
+    "strata": [
+      "stratum"
+    ],
+    "thresholds": {
+      "extremeValueShare": 0.5,
+      "minMeanLeadsPerCluster": 1
+    },
+    "treatment": "B",
+    "unit": "exhibitor",
+    "version": 1
+  },
+  "results": {
+    "adjusted": {
+      "adjustment": "cuped",
+      "effect": {
+        "alpha": 0.05,
+        "available": true,
+        "ciLower": -2.250151725120369,
+        "ciUpper": 1.2345188906891316,
+        "estimate": -0.5078164172156185,
+        "method": "stratified_cluster_delta",
+        "pValue": 0.5678328996320156,
+        "reasons": [],
+        "se": 0.8889629198512738,
+        "zCrit": 1.959963986120195
+      },
+      "perArm": {
+        "A": {
+          "clusters": 12,
+          "leads": 478.7345454545455,
+          "ratio": 21.0066463099687,
+          "value": 10056.607272727273
+        },
+        "B": {
+          "clusters": 12,
+          "leads": 469.2654545454546,
+          "ratio": 20.498829892753083,
+          "value": 9619.392727272727
+        }
+      }
+    },
+    "primaryView": "adjusted",
+    "unadjusted": {
+      "adjustment": "none",
+      "effect": {
+        "alpha": 0.05,
+        "available": true,
+        "ciLower": -2.2286648869024086,
+        "ciUpper": 1.2625324082699343,
+        "estimate": -0.48306623931623704,
+        "method": "stratified_cluster_delta",
+        "pValue": 0.5875509324712601,
+        "reasons": [],
+        "se": 0.8906279196699088,
+        "zCrit": 1.959963986120195
+      },
+      "perArm": {
+        "A": {
+          "clusters": 12,
+          "leads": 480,
+          "ratio": 20.99375,
+          "value": 10077
+        },
+        "B": {
+          "clusters": 12,
+          "leads": 468,
+          "ratio": 20.51068376068376,
+          "value": 9599
+        }
+      }
+    }
+  }
+}

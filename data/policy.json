@@ -8,5 +8,9 @@
     "stratum"
   ],
   "seed": 2047,
-  "alpha": 0.05
+  "alpha": 0.05,
+  "thresholds": {
+    "minMeanLeadsPerCluster": 1,
+    "extremeValueShare": 0.5
+  }
 }

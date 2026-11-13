@@ -1,0 +1,20 @@
+{
+  "count": 96,
+  "groupBy": "arm",
+  "groups": [
+    {
+      "count": 48,
+      "key": "A",
+      "ratio": 20.99375,
+      "sum": 10077
+    },
+    {
+      "count": 48,
+      "key": "B",
+      "ratio": 20.51068376068376,
+      "sum": 9599
+    }
+  ],
+  "inputFingerprint": "5eeb2e8c4a7a32a9ccaf99a77573f52783d8bcc19e32dc96a35a0f7d65512c5c",
+  "valueField": "value"
+}
